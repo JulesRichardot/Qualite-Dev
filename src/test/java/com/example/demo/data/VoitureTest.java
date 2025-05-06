@@ -9,7 +9,11 @@ public class VoitureTest {
 
     @Test
     void creerVoiture(){
-
+        Voiture voiture = new Voiture("Ferrari", 5000);
+        Assert.isTrue(voiture.getMarque().equals("Ferrari"), "Doit être Ferrari");
+        Assert.isTrue(voiture.getPrix() == 5000, "Doit être 5000");
+        //la clef primaire n'a pas été générée
+        Assert.isTrue(voiture.getId() ==0, "Doit être 0");
     }
 
 }
