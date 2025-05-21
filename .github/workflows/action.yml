@@ -22,4 +22,3 @@ jobs:
           export SHELL=/bin/bash
           chmod u+x ./gradlew
           ./gradlew test -i | grep -E " > |BUILD"
-          ./gradlew jacocoTestReport
