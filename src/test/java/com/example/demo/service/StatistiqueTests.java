@@ -25,5 +25,4 @@ public class StatistiqueTests {
         assertEquals(echantillon.getNombreDeVoitures(), 1);
         assertEquals(echantillon.getPrixMoyen(), 1000);
     }
-
 }
